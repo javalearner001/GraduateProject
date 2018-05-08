@@ -37,7 +37,7 @@ font {
 </style>
 <script type="text/javascript">
 	//自定义校验规则
-	$.validator.addMethod(
+	/*$.validator.addMethod(
 	    //名称
 	    "checkUsername",
 		//函数
@@ -60,7 +60,7 @@ font {
 			//返回false,代表不通过
 			return flag;
         }
-	);
+	);*/
 	
 
     $(function (){
@@ -68,7 +68,7 @@ font {
             rules:{
                 "username":{
                     "required":true,
-					"checkUsername":true
+					/*"checkUsername":true*/
                 },
 				"password":{
                     "required":true,
@@ -93,7 +93,7 @@ font {
             messages:{
                 "username":{
                     "required":"用户名不能为空",
-                    "checkUsername":"用户名已存在"
+                    /*"checkUsername":"用户名已存在"*/
                 },
 				"password":{
                     "required":"密码不能为空",

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sun.dao.ProductDao">
+    <select id="findHotProductList" resultType="com.sun.pojo.Product">
+        SELECT *
+        FROM product
+        WHERE is_hot=1
+    </select>
+    <select id="findNewProductList" resultType="com.sun.pojo.Product">
+        SELECT *
+        FROM product
+        order BY pdate
+    </select>
+</mapper>
